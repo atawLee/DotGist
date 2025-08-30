@@ -35,15 +35,23 @@ dotgist -u "https://gist.github.com/username/gist-id" -e
 
 ```bash
 # 코드 미리보기 + 자동 빌드
-dotgist quick -u "https://gist.github.com/username/gist-id"
+dotgist quick-async -u "https://gist.github.com/username/gist-id"
 ```
 
 ### URL 검증
 
 ```bash
 # Gist URL 유효성 확인
-dotgist validate -u "https://gist.github.com/username/gist-id"
+dotgist validate-async -u "https://gist.github.com/username/gist-id"
 ```
+
+## ?? 명령어 목록
+
+| 명령어 | 설명 | 옵션 |
+|--------|------|------|
+| (기본) | 코드 추출 및 저장 | `-u`, `-o`, `-e`, `-s`, `-f` |
+| `quick-async` | 빠른 추출 (미리보기 + 빌드) | `-u` |
+| `validate-async` | URL 유효성 검증 | `-u` |
 
 ## ?? 옵션 설명
 
@@ -65,7 +73,13 @@ dotgist -u "https://gist.github.com/example/123abc"
 dotgist -u "https://gist.github.com/example/123abc" -s -o "HelloWorld.cs"
 
 # 3. 빠른 추출 및 빌드
-dotgist quick -u "https://gist.github.com/example/123abc"
+dotgist quick-async -u "https://gist.github.com/example/123abc"
+
+# 4. URL 검증 후 작업
+dotgist validate-async -u "https://gist.github.com/example/123abc"
+# ? URL이 유효합니다: https://gist.github.com/example/123abc
+# ?? 상태 코드: OK
+# ?? 컨텐츠 길이: 1234 bytes
 ```
 
 ## ?? 빌드 방법
