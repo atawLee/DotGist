@@ -1,74 +1,74 @@
-# DotGist ??
+# DotGist
 
-GitHub Gist¿¡¼­ C# ÄÚµå¸¦ ÃßÃâÇÏ¿© .NET 10 ´ÜÀÏ ÆÄÀÏ ¾ÛÀ¸·Î ºôµåÇÏ´Â ¸í·ÉÁÙ µµ±¸ÀÔ´Ï´Ù.
+GitHub Gistì—ì„œ C# ì½”ë“œë¥¼ ì¶”ì¶œí•˜ì—¬ .NET 10 ë‹¨ì¼ íŒŒì¼ ì•±ìœ¼ë¡œ ë¹Œë“œí•˜ëŠ” ëª…ë ¹ì¤„ ë„êµ¬ì…ë‹ˆë‹¤.
 
-## ?? ÁÖ¿ä ±â´É
+## ì£¼ìš” ê¸°ëŠ¥
 
-- GitHub Gist URL¿¡¼­ C# ÄÚµå ÃßÃâ
-- ÃßÃâµÈ ÄÚµå¸¦ ·ÎÄÃ ÆÄÀÏ·Î ÀúÀå
-- .NET 10 ´ÜÀÏ ÆÄÀÏ ¾Û ºôµå (csproj ¾øÀÌ)
-- Gist URL À¯È¿¼º °ËÁõ
+- GitHub Gist URLì—ì„œ C# ì½”ë“œ ì¶”ì¶œ
+- ì¶”ì¶œëœ ì½”ë“œë¥¼ ë¡œì»¬ íŒŒì¼ë¡œ ì €ì¥
+- .NET 10 ë‹¨ì¼ íŒŒì¼ ì•± ë¹Œë“œ (csproj ì—†ì´)
+- Gist URL ìœ íš¨ì„± ê²€ì¦
 
-## ?? ÇÊ¼ö ¿ä±¸»çÇ×
+## í•„ìˆ˜ ìš”êµ¬ì‚¬í•­
 
-- **.NET 10 SDK** (ÇÊ¼ö)
+- **.NET 10 SDK** (í•„ìˆ˜)
 
-## ?? »ç¿ë¹ı
+## ì‚¬ìš©ë²•
 
-### ±âº» ¸í·É¾î
+### ê¸°ë³¸ ëª…ë ¹ì–´
 
 ```bash
-# ±âº» ÃßÃâ
+# ê¸°ë³¸ ì¶”ì¶œ
 dotgist -u "https://gist.github.com/username/gist-id"
 
-# ÆÄÀÏ¸í ÁöÁ¤ÇÏ¿© ÃßÃâ
+# íŒŒì¼ëª… ì§€ì •í•˜ì—¬ ì¶”ì¶œ
 dotgist -u "https://gist.github.com/username/gist-id" -o "MyApp.cs"
 
-# ÄÚµå ¹Ì¸®º¸±â
+# ì½”ë“œ ë¯¸ë¦¬ë³´ê¸°
 dotgist -u "https://gist.github.com/username/gist-id" -s
 
-# ÃßÃâ ÈÄ ÀÚµ¿ ºôµå
+# ì¶”ì¶œ í›„ ìë™ ë¹Œë“œ
 dotgist -u "https://gist.github.com/username/gist-id" -e
 ```
 
-### ºü¸¥ ¸í·É¾î
+### ë¹ ë¥¸ ëª…ë ¹ì–´
 
 ```bash
-# ÄÚµå ¹Ì¸®º¸±â + ÀÚµ¿ ºôµå
+# ì½”ë“œ ë¯¸ë¦¬ë³´ê¸° + ìë™ ë¹Œë“œ
 dotgist quick -u "https://gist.github.com/username/gist-id"
 ```
 
-### URL °ËÁõ
+### URL ê²€ì¦
 
 ```bash
-# Gist URL À¯È¿¼º È®ÀÎ
+# Gist URL ìœ íš¨ì„± í™•ì¸
 dotgist validate -u "https://gist.github.com/username/gist-id"
 ```
 
-## ?? ¿É¼Ç ¼³¸í
+##  ì˜µì…˜ ì„¤ëª…
 
-| ¿É¼Ç | ¼³¸í | ±âº»°ª |
+| ì˜µì…˜ | ì„¤ëª… | ê¸°ë³¸ê°’ |
 |------|------|--------|
-| `-u` | GitHub Gist URL (ÇÊ¼ö) | - |
-| `-o` | Ãâ·Â ÆÄÀÏ¸í | GUID ÀÚµ¿»ı¼º |
-| `-e` | ÀúÀå ÈÄ dotnet publish ½ÇÇà | false |
-| `-s` | ÃßÃâ ÄÚµå ÄÜ¼Ö Ç¥½Ã | false |
-| `-f` | ÆÄÀÏ È®ÀåÀÚ | cs |
+| `-u` | GitHub Gist URL (í•„ìˆ˜) | - |
+| `-o` | ì¶œë ¥ íŒŒì¼ëª… | GUID ìë™ìƒì„± |
+| `-e` | ì €ì¥ í›„ dotnet publish ì‹¤í–‰ | false |
+| `-s` | ì¶”ì¶œ ì½”ë“œ ì½˜ì†” í‘œì‹œ | false |
+| `-f` | íŒŒì¼ í™•ì¥ì | cs |
 
-## ?? »ç¿ë ¿¹Á¦
+##  ì‚¬ìš© ì˜ˆì œ
 
 ```bash
-# 1. °£´ÜÇÑ ÃßÃâ
+# 1. ê°„ë‹¨í•œ ì¶”ì¶œ
 dotgist -u "https://gist.github.com/example/123abc"
 
-# 2. ¹Ì¸®º¸±â¿Í ÇÔ²² ÃßÃâ
+# 2. ë¯¸ë¦¬ë³´ê¸°ì™€ í•¨ê»˜ ì¶”ì¶œ
 dotgist -u "https://gist.github.com/example/123abc" -s -o "HelloWorld.cs"
 
-# 3. ºü¸¥ ÃßÃâ ¹× ºôµå
+# 3. ë¹ ë¥¸ ì¶”ì¶œ ë° ë¹Œë“œ
 dotgist quick -u "https://gist.github.com/example/123abc"
 ```
 
-## ?? ºôµå ¹æ¹ı
+##  ë¹Œë“œ ë°©ë²•
 
 ```bash
 git clone https://github.com/atawLee/DotGist.git
@@ -78,4 +78,4 @@ dotnet publish -c Release
 
 ---
 
-**Note**: .NET 10 SDK°¡ ¼³Ä¡µÇ¾î ÀÖ¾î¾ß ÇÕ´Ï´Ù.
+**Note**: .NET 10 SDKê°€ ì„¤ì¹˜ë˜ì–´ ìˆì–´ì•¼ í•©ë‹ˆë‹¤.
