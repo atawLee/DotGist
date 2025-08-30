@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Text;
 using DotGist.Core;
 
-public class WebStringRetriever : IWebStringRetriever
+public class GitGistRetriever : IWebStringRetriever
 {
     private readonly HttpClient _httpClient;
 
-    public WebStringRetriever(HttpClient httpClient)
+    public GitGistRetriever(HttpClient httpClient)
     {
         _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
     }
