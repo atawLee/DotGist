@@ -96,7 +96,7 @@ public class GistCommands
     /// Gist URL의 유효성을 검증합니다.
     /// </summary>
     /// <param name="url">-u, 검증할 GitHub Gist URL</param>
-    public async Task Validate(string url)
+    public async Task ValidateAsync(string url)
     {
         try
         {
